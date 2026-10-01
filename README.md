@@ -1,8 +1,7 @@
-🛠️ Tecnologias utilizadas
+## 📌 Sobre o projeto
 
-O projeto foi desenvolvido utilizando tecnologias voltadas para desenvolvimento web front-end:
+Este projeto é uma reimplementação, para fins de estudo, da Landing Page desenvolvida durante o Hackathon SouJunior. A proposta original foi criar uma experiência digital para apresentar a SouJunior, seu impacto e direcionar novos apoiadores para a campanha no Apoia.se.
 
-HTML5 — estrutura e semântica da página;
-CSS3 — estilização e identidade visual;
-JavaScript — interações e comportamentos da página;
-Bootstrap — componentes, grid e responsividade.
+Durante o Hackathon, atuei na área de **QA (Quality Assurance)**, contribuindo com a validação da qualidade, responsividade e experiência da página, além de auxiliar na **construção do design**.
+
+Nesta versão, estou recriando a página do zero como forma de praticar e consolidar meus estudos em **HTML, CSS, JavaScript e Bootstrap**, aplicando na prática conceitos de estruturação, estilização, responsividade e interações em uma página web.
