@@ -21,6 +21,19 @@ body {
   height: 60px;
 }
 
+/* Estado inicial (sem rolagem) */
+.navbar-transparent {
+  background-color: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+/* Estado ativo (quando o usuário rola a página) */
+.navbar-scrolled {
+  background-color: #0b1120 !important; /* Coloque aqui a cor escura do seu site */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4); /* Sombra para dar destaque */
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
 nav {
   display: flex;
   justify-content: center;
@@ -48,6 +61,12 @@ nav.navbar {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+}
+
+/* Controla a largura da logo para não encostar nos links */
+.logo-img {
+  max-width: 150px; /* Reduz a logo de 300px para 180px */
+  height: auto;
 }
 
 /* ======== 1 secao hero==========*/
