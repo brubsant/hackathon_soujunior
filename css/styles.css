@@ -11,16 +11,12 @@ body {
   background-repeat: no-repeat;
   background: linear-gradient(180deg, #102295 0%, #142DC8 100%);
 }
-<<<<<<< HEAD
-
-=======
 /* Garante que imagens e rows não estourem a largura */
 .row {
   --bs-gutter-x: 1.5rem;
   margin-right: 0 !important;
   margin-left: 0 !important;
 }
->>>>>>> develop
 
 /*cabeçalho menu */
 
@@ -30,8 +26,6 @@ body {
   height: 60px;
 }
 
-<<<<<<< HEAD
-=======
 /* Estado inicial (sem rolagem) */
 .navbar-transparent {
   background-color: transparent;
@@ -45,16 +39,11 @@ body {
   border-color: rgba(255, 255, 255, 0.2) !important;
 }
 
->>>>>>> develop
 nav {
   display: flex;
   justify-content: center;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> develop
 nav a {
   text-decoration: none;
   padding: 8px 18px;
@@ -78,10 +67,6 @@ nav.navbar {
   transform: translateX(-50%);
 }
 
-<<<<<<< HEAD
-/* ======== 1 secao hero==========*/
-
-=======
 /* Controla a largura da logo para não encostar nos links */
 .logo-img {
   max-width: 150px; /* Reduz a logo de 300px para 180px */
@@ -89,7 +74,6 @@ nav.navbar {
 }
 
 /* ======== 1 secao hero==========*/
->>>>>>> develop
 
 /* Fonte Funnel Display Bold (700) para o título da Hero */
 .hero h1 {
@@ -112,12 +96,6 @@ nav.navbar {
 
 /*  forma fundo*/
 .gif-container {
-<<<<<<< HEAD
-  position: relative;
-  overflow: hidden;
-  /* Esconde o que passar dos limites no zoom */
-=======
->>>>>>> develop
   display: flex;
   justify-content: center;
   align-items: center;
@@ -516,8 +494,6 @@ nav.navbar {
 
 /*======== 7 secao planos ========= */
 
-<<<<<<< HEAD
-=======
 .badge-planos {
   background-color: #3b82f6;
   color: #ffffff;
@@ -623,4 +599,3 @@ nav.navbar {
   color: #ffffff;
   transform: translateY(-3px);
 }
->>>>>>> develop
