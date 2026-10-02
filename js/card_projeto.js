@@ -2,7 +2,11 @@ const cards = document.querySelectorAll('.card-item');
 
   cards.forEach(card => {
     // Para trocar a posição ao passar o mouse (hover) ou ao clicar
+<<<<<<< HEAD
     card.addEventListener('mouseenter', () => {
+=======
+    card.addEventListener('click', () => {
+>>>>>>> develop
       // Se o card onde passou o rato não for o central
       if (!card.classList.contains('card-pos-3')) {
         mudarParaCentro(card);
