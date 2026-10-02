@@ -20,7 +20,9 @@
 
 <body>
   <header class="fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark px-5 mx-auto rounded-pill border border-secondary mt-4 navbar-transparent" id="mainNav">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark px-5 mx-auto rounded-pill border border-secondary mt-4 navbar-transparent"
+      id="mainNav">
       <!--Logo-->
       <div class="container-fluid">
         <a class="navbar-brand fw-bold p-0 mb-2" href="#">
@@ -545,7 +547,137 @@
         </div>
       </div>
     </section>
+
+    <!-- 8 seção de perguntas frequentes-->
+    <section class=" faq py-5">
+      <!-- Cabeçalho da Seção -->
+      <div class="container text-center mb-5">
+        <span class="badge rounded-pill text-bg-primary px-3 py-2 mb-2">DÚVIDAS</span>
+        <h2 class="fw-bold text-white">Perguntas Frequentes</h2>
+      </div>
+
+      <!-- Accordion Estilizado -->
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion custom-faq" id="faqAccordion">
+
+            <!-- Pergunta 1 -->
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq1">
+                  Como funciona o apoio ao SouJunior?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Ao se tornar um apoiador, você contribui diretamente para manter a comunidade ativa, financiando
+                  iniciativas 100% gratuitas para novos talentos na tecnologia.
+                </div>
+              </div>
+            </div>
+
+            <!-- Pergunta 2 -->
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq2">
+                  Posso cancelar ou alterar minha contribuição?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Sim! Você tem total controle sobre sua assinatura na plataforma Apoia.se e pode alterar o valor ou
+                  cancelar a qualquer momento.
+                </div>
+              </div>
+            </div>
+
+            <!-- Pergunta 3 -->
+            <div class="accordion-item mb-3">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#faq3">
+                  Quais são os benefícios de cada plano?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Cada plano oferece diferentes níveis de acesso à nossa comunidade, grupos de acompanhamento dos
+                  projetos e relatórios de progresso da iniciativa.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+<footer class="footer-custom pt-5 pb-4 border-top border-secondary border-opacity-25">
+  <div class="container">
+    <div class="row gy-4 justify-content-between align-items-start">
+      
+      <!-- Coluna 1: Logo e Sobre -->
+      <div class="col-lg-4 col-md-6">
+        <a href="#" class="d-inline-block mb-3">
+          <img src="/assets/logo_soujunior.svg" alt="SouJunior" style="max-width: 180px; height: auto;">
+        </a>
+      </div>
+
+      <!-- Coluna 2: Navegação Rápida -->
+      <div class="col-lg-2 col-md-3 col-6">
+        <h5 class="text-white fs-6 fw-bold mb-3">Navegação</h5>
+        <ul class="list-unstyled mb-0">
+          <li class="mb-2"><a href="#" class="footer-link">Início</a></li>
+          <li class="mb-2"><a href="#" class="footer-link">Produtos</a></li>
+          <li class="mb-2"><a href="#" class="footer-link">Sobre</a></li>
+          <li class="mb-2"><a href="#" class="footer-link">Contato</a></li>
+        </ul>
+      </div>
+
+      <!-- Coluna 3: Links Úteis / Projetos -->
+      <div class="col-lg-2 col-md-3 col-6">
+        <h5 class="text-white fs-6 fw-bold mb-3">Comunidade</h5>
+        <ul class="list-unstyled mb-0">
+          <li class="mb-2"><a href="[https://apoia.se/soujunior](https://apoia.se/soujunior)" target="_blank" rel="noopener noreferrer" class="footer-link">Apoiar Projeto</a></li>
+          <li class="mb-2"><a href="#" class="footer-link">Perguntas Frequentes</a></li>
+          <li class="mb-2"><a href="#" class="footer-link">Termos de Uso</a></li>
+        </ul>
+      </div>
+
+      <!-- Coluna 4: Redes Sociais -->
+      <div class="col-lg-3 col-md-12 text-lg-end">
+        <h5 class="text-white fs-6 fw-bold mb-3">Conecte-se</h5>
+        <div class="d-flex gap-3 justify-content-lg-end mb-3">
+          <a href="#" class="social-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="social-icon" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-icon" aria-label="Discord"><i class="bi bi-discord"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="my-4 border-secondary opacity-25">
+
+    <!-- Direitos Autorais e Créditos -->
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+        <p class="text-secondary small mb-0">
+          &copy; 2026 <strong>SouJunior</strong>. Todos os direitos reservados.
+        </p>
+      </div>
+      <div class="col-md-6 text-center text-md-end">
+        <p class="text-secondary small mb-0">
+          Feito com 💙 para a comunidade.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</footer>
+  
 
   <!-- 2. JS do Bootstrap (sempre no fim, antes do body)-->
 
