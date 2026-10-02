@@ -1,0 +1,477 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,400i,600");
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+
+
+
+/* corpo da página - plano de fundo*/
+body {
+  background-size: cover;
+  background-color: white;
+  color: white;
+  background-repeat: no-repeat;
+  background: linear-gradient(180deg, #102295 0%, #142DC8 100%);
+}
+
+
+/*cabeçalho menu */
+
+.navbar {
+  width: 70%;
+  max-width: 80%;
+  height: 60px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+
+nav a {
+  text-decoration: none;
+  padding: 8px 18px;
+  margin: 10px;
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-radius: 25px;
+  transition: border 0.2s ease;
+  font-family: 'Funnel Display', sans-serif;
+  font-weight: 400;
+}
+
+/* centralizar navbar*/
+nav.navbar {
+  position: relative;
+  /* necessário para o absolute funcionar */
+}
+
+.navbar-nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ======== 1 secao hero==========*/
+
+
+/* Fonte Funnel Display Bold (700) para o título da Hero */
+.hero h1 {
+  font-family: 'Funnel Display', sans-serif;
+  font-weight: 700;
+}
+
+/* Fonte Funnel Display Medium (500) para a descrição da Hero */
+.hero p {
+  font-family: 'Funnel Display', sans-serif;
+  font-weight: 400;
+}
+
+/* botoes hero */
+
+.btn-hero {
+  font-family: 'Funnel Display', sans-serif;
+  font-weight: 700;
+}
+
+/*  forma fundo*/
+.gif-container {
+  position: relative;
+  overflow: hidden;
+  /* Esconde o que passar dos limites no zoom */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* A forma que vai dar zoom no fundo */
+.forma-fundo {
+  position: absolute;
+  width: 400px;
+  height: 350px;
+  background: radial-gradient(circle, #fffefe);
+  /* Exemplo de cor/forma */
+  border-radius: 130px;
+  /* Bordas arredondadas */
+  z-index: 1;
+  /* Fica atrás */
+
+  /* Configuração da animação com Scroll */
+  animation: zoomNoScroll linear;
+  animation-timeline: scroll(root);
+  /* Vincula o zoom ao scroll da página inteira */
+}
+
+/* O GIF que fica fixo ou normal na frente */
+.gif-frente {
+  position: relative;
+  z-index: 2;
+  /* Fica na frente da forma */
+  max-width: 120%;
+  height: auto;
+}
+
+/* Definição da animação: começa normal e termina grande */
+@keyframes zoomNoScroll {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(3);
+    /* Ajuste o valor para o tamanho máximo do zoom */
+  }
+}
+
+/* ======== 2 secao metricas ==========*/
+/* metricas */
+
+.metricas {
+  width: 90%;
+  padding: 50px 0;
+  border-radius: 0;
+}
+
+.bordametrica {
+  border-right: 2px solid #ffffff;
+}
+
+.card {
+  background-color: #0A1662;
+  display: flex;
+  padding: max(1.6vw, 1rem) max(1.6vw, 1rem) 0 max(1.6vw, 1rem);
+  border-radius: 2vw;
+}
+
+/*  para esconder a ultima borda*/
+.bordametrica:last-child {
+  border-right: none !important;
+}
+
+/* neon de baixo das metricas*/
+.neon-shadow-bottom {
+
+  box-shadow: 0px 10px 20px -5px rgba(253, 255, 255, 0.288),
+    0px 15px 30px -10px rgba(10, 10, 10, 0.205);
+  position: relative;
+  z-index: 2;
+  /* Impede que a secção seguinte cubra a sombra */
+}
+
+/* ======== 3 secao sobre ==========*/
+
+/* Badge impacto */
+.badge-impacto {
+  background-color: #3b82f6;
+  color: #ffffff;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Formatação do Texto */
+.texto-descricao {
+  color: #e2e8f0;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* Card das Imagens */
+.card-image {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 250px;
+  /* 1. DEFINE UMA ALTURA FIXA PARA O CARD */
+  width: 100%;
+
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  /* 2. AGORA O 100% VAI OBEDECER AOS 250px DO PAI */
+  object-fit: cover;
+  /* 3. CORTA O EXCESSO SEM DISTORCER A IMAGEM */
+  object-position: center;
+  /* Centraliza o foco da foto */
+  border-radius: 15px;
+
+}
+
+/* Texto sobreposto nas imagens */
+.tag-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: #0E14BF;
+  /* Azul ciano brilhante */
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.shadow-lg {
+  background: linear-gradient(180deg, #0a1662 100%);
+}
+
+
+/*========= 3 secao ============= */
+
+.card-divisao {
+  background-color: #0A1662;
+  display: flex;
+}
+
+.gradiente {
+  /* Define as cores do gradiente (ex: amarelo para laranja) */
+  background: linear-gradient(90deg, #3C7EF9 0%, #22D3EE 100%);
+
+  /* Recorta o fundo para ficar apenas dentro do texto */
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* Torna a cor original do texto transparente para revelar o gradiente */
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+
+  /* Opcional: deixa o texto em negrito para dar mais destaque ao gradiente */
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* escrita do lado direito*/
+.small {
+  font-size: 1.2rem;
+}
+
+
+/*======= 5 secao projetos ======== */
+
+.projetos {
+  background: linear-gradient(180deg, #102295 0%, #142DC8 100%);
+}
+
+
+/* Container Geral */
+.secao-projetos {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #0d0f17;
+  color: #fff;
+  overflow: hidden;
+}
+
+.carrossel-3d {
+  position: relative;
+  height: 520px;
+  max-width: 1000px;
+  margin: 40px auto 0;
+  perspective: 1200px;
+  /* Cria a profundidade 3D */
+}
+
+/* Base de todos os Cards */
+.card-item {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 320px;
+  height: 460px;
+  background-color: #d1d5db;
+  /* Cor cinza do topo igual ao print */
+  border-radius: 28px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  cursor: pointer;
+  /* Transição suave para troca de posição e rotação */
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1),
+    z-index 0.5s,
+    filter 0.5s,
+    opacity 0.5s;
+}
+
+/* Topo do Card */
+.card-topo {
+  padding: 20px 24px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+  color: #111827;
+}
+
+.card-topo h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-topo span {
+  font-size: 0.85rem;
+  color: #4b5563;
+}
+
+.btn-like {
+  background: rgba(0, 0, 0, 0.1);
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #111827;
+}
+
+/* Imagem e Zoom Interno */
+.card-midia {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.card-midia img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+/* -------------------------------------------------------------
+   POSIÇÕES 3D (EM LEQUE IGUAL À FOTO)
+------------------------------------------------------------- */
+
+/* Pos 3: CARD CENTRAL (Em Destaque) */
+.card-pos-3 {
+  transform: translateX(-50%) translateZ(100px) rotateY(0deg);
+  z-index: 10;
+  filter: brightness(1);
+}
+
+/* Pos 2: CARD DA ESQUERDA */
+.card-pos-2 {
+  transform: translateX(-125%) translateZ(0px) rotateY(25deg);
+  z-index: 5;
+  filter: brightness(0.75);
+}
+
+/* Pos 4: CARD DA DIREITA */
+.card-pos-4 {
+  transform: translateX(25%) translateZ(0px) rotateY(-25deg);
+  z-index: 5;
+  filter: brightness(0.75);
+}
+
+/* Pos 1 e 5: CARDS ESCONDIDOS NAS PONTAS */
+.card-pos-1 {
+  transform: translateX(-190%) translateZ(-150px) rotateY(40deg);
+  z-index: 1;
+  opacity: 0.3;
+  filter: brightness(0.5);
+}
+
+.card-pos-5 {
+  transform: translateX(90%) translateZ(-150px) rotateY(-40deg);
+  z-index: 1;
+  opacity: 0.3;
+  filter: brightness(0.5);
+}
+
+/* -------------------------------------------------------------
+   EFEITO HOVER (ZOOM PARA A FRENTE E BRILHO)
+------------------------------------------------------------- */
+
+/* Zoom para a frente quando coloca o rato por cima */
+.card-item:hover {
+  filter: brightness(1.1) !important;
+}
+
+/* Zoom extra na imagem quando o rato está por cima do card */
+.card-item:hover .card-midia img {
+  transform: scale(1.08);
+}
+
+/* Se for o card central, ganha projeção extra no hover */
+.card-pos-3:hover {
+  transform: translateX(-50%) translateZ(160px) rotateY(0deg);
+}
+
+/* Se for um lateral, inclina menos e aproxima-se ao passar o rato */
+.card-pos-2:hover {
+  transform: translateX(-120%) translateZ(60px) rotateY(10deg);
+}
+
+.card-pos-4:hover {
+  transform: translateX(20%) translateZ(60px) rotateY(-10deg);
+}
+
+/* 6 secao area de atuacao */
+
+
+.area {
+  background-color: #0A1662;
+  font-size: 2.5rem;
+  font-family: 'Funnel Display', sans-serif;
+  padding: 80px;
+}
+
+.gradiente {
+  /* Define as cores do gradiente (ex: amarelo para laranja) */
+  background: linear-gradient(90deg, #3C7EF9 0%, #22D3EE 100%);
+
+  /* Recorta o fundo para ficar apenas dentro do texto */
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* Torna a cor original do texto transparente para revelar o gradiente */
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+
+  /* Opcional: deixa o texto em negrito para dar mais destaque ao gradiente */
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* Máscara com gradiente nas bordas */
+.carrossel-mask {
+  width: 100%;
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+/* Trilho com animação infinita */
+.carrossel-track {
+  width: max-content;
+  animation: rolar 25s linear infinite;
+}
+
+/* Pausa ao passar o mouse */
+.carrossel-mask:hover .carrossel-track {
+  animation-play-state: paused;
+}
+
+/* Animação CSS para rodar continuamente */
+@keyframes rolar {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Estilo individual e hover */
+.area-item {
+  min-width: 90px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.area-item:hover {
+  transform: translateY(-4px);
+  opacity: 0.8;
+}
+
+/*======== 7 secao planos ========= */
+
