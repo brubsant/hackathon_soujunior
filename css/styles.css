@@ -11,6 +11,12 @@ body {
   background-repeat: no-repeat;
   background: linear-gradient(180deg, #102295 0%, #142DC8 100%);
 }
+/* Garante que imagens e rows não estourem a largura */
+.row {
+  --bs-gutter-x: 1.5rem;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
 
 /*cabeçalho menu */
 
